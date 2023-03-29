@@ -4,7 +4,7 @@ import { Inner } from "./IntroContainer";
 const Brand = styled(Inner)`
   display: flex;
   align-items: center;
-  background-color: black;
+  background-color: #97bb9e;
 `;
 
 function BrandContainer() {
