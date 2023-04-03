@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { Inner } from "./IntroContainer";
 
 const Product = styled(Inner)`
-  background-color: #3fe558;
+  background-color: #dfdfdf;
 `;
 
 function ProductContainer() {
-  return <Product>ProductContainer</Product>;
+  return <Product></Product>;
 }
 
 export default ProductContainer;
