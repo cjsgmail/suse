@@ -50,7 +50,10 @@ function Main() {
             left: 0,
             behavior: "smooth",
           });
-        } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 2) {
+        } else if (
+          Math.ceil(scrollTop) >= pageHeight &&
+          Math.ceil(scrollTop) < pageHeight * 2
+        ) {
           //현재 2페이지
           outerDivRef.current.scrollTo({
             top: pageHeight,
