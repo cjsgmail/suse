@@ -3,7 +3,6 @@ import { useRef, useEffect } from "react";
 import IntroContainer from "../components/IntroContainer";
 import ProductContainer from "../components/ProductContainer";
 import BrandContainer from "../components/BrandContainer";
-import { useMediaQuery } from "react-responsive";
 
 const Outer = styled.div`
   height: 100vh;
