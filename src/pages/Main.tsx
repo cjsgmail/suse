@@ -67,8 +67,6 @@ function Main() {
           Math.ceil(scrollTop) < pageHeight * 2
         ) {
           //현재 2페이지
-          console.log(["scrollTop", scrollTop]);
-          console.log(["pageHeight", pageHeight]);
           outerDivRef.current.scrollTo({
             top: pageHeight,
             left: 0,
