@@ -3,7 +3,6 @@ import { useRef, useEffect } from "react";
 import IntroContainer from "../components/IntroContainer";
 import ProductContainer from "../components/ProductContainer";
 import BrandContainer from "../components/BrandContainer";
-import { useMediaQuery } from "react-responsive";
 
 const Outer = styled.div`
   height: 100vh;
@@ -13,16 +12,6 @@ const Outer = styled.div`
     display: none;
   }
 `;
-
-const Mobile = ({ children }: { children?: any }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  return isMobile ? children : null;
-};
-
-const PC = ({ children }: { children: any }) => {
-  const isPC = useMediaQuery({ minWidth: 768 });
-  return isPC ? children : null;
-};
 
 function Main() {
   const outerDivRef = useRef<any>(null);
@@ -90,22 +79,11 @@ function Main() {
   }, []);
 
   return (
-    <>
-      <PC>
-        <Outer ref={outerDivRef}>
-          <IntroContainer />
-          <BrandContainer />
-          <ProductContainer />
-        </Outer>
-      </PC>
-      <Mobile>
-        <Outer>
-          <IntroContainer />
-          <BrandContainer />
-          <ProductContainer />
-        </Outer>
-      </Mobile>
-    </>
+    <Outer ref={outerDivRef}>
+      <IntroContainer />
+      <BrandContainer />
+      <ProductContainer />
+    </Outer>
   );
 }
 
