@@ -4,7 +4,6 @@ import naturalBg from "../images/naturalBg.jpg";
 
 export const Inner = styled.div`
   height: 100vh;
-  width: 100%;
   color: white;
 `;
 

@@ -9,5 +9,6 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     overflow-y: hidden;
+    overflow-x :  hidden;
   }
 `;

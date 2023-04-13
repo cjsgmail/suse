@@ -17,6 +17,8 @@ const BuyLinkContainer = styled.div`
   width: 80%;
   @media screen and (max-width: 1200px) {
     flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
   }
 `;
 
@@ -28,7 +30,7 @@ const BuyLinkItemContainer = styled.div`
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 1200px) {
-    height: 50%;
+    height: 100%;
     width: 100%;
   }
 `;
@@ -59,6 +61,9 @@ const BuyLinkTextContainer = styled.div`
   justify-content: center;
   @media screen and (max-width: 1200px) {
     align-items: center;
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
   }
 `;
 

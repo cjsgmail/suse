@@ -6,6 +6,7 @@ import BrandContainer from "../components/BrandContainer";
 
 const Outer = styled.div`
   height: 100vh;
+  width: 100vw;
   overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
