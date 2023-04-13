@@ -55,7 +55,7 @@ function Main() {
           });
         }
       } else {
-        if (Math.ceil(scrollTop) >= 0 && Math.ceil(scrollTop) <= pageHeight) {
+        if (scrollTop >= 0 && Math.floor(scrollTop) <= pageHeight) {
           //현재 1페이지
           outerDivRef.current.scrollTo({
             top: 0,
@@ -67,6 +67,8 @@ function Main() {
           Math.ceil(scrollTop) < pageHeight * 2
         ) {
           //현재 2페이지
+          console.log(["scrollTop", scrollTop]);
+          console.log(["pageHeight", pageHeight]);
           outerDivRef.current.scrollTo({
             top: pageHeight,
             left: 0,
