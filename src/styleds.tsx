@@ -8,7 +8,8 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     margin: 0;
+    @media screen and (min-width: 768px){
     overflow-y: hidden;
-    overflow-x :  hidden;
+    }
   }
 `;
