@@ -15,6 +15,9 @@ const BuyLinkContainer = styled.div`
   justify-content: center;
   height: 100%;
   width: 80%;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const BuyLinkItemContainer = styled.div`
@@ -24,6 +27,10 @@ const BuyLinkItemContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    height: 50%;
+    width: 100%;
+  }
 `;
 
 const BuyLinkImgContainer = styled.div`
@@ -32,6 +39,10 @@ const BuyLinkImgContainer = styled.div`
   background-color: black;
   border-radius: 50%;
   overflow: hidden;
+  @media screen and (max-width: 1200px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 const BuyLinkImg = styled.img`
@@ -46,6 +57,9 @@ const BuyLinkTextContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  @media screen and (max-width: 1200px) {
+    align-items: center;
+  }
 `;
 
 const BuyLinkTitle = styled.div`
@@ -53,6 +67,9 @@ const BuyLinkTitle = styled.div`
   font-weight: bold;
   color: black;
   margin-bottom: 10px;
+  @media screen and (max-width: 1200px) {
+    font-size: 30px;
+  }
 `;
 
 const ButLinkText = styled.div`
@@ -60,6 +77,9 @@ const ButLinkText = styled.div`
   font-weight: 100;
   color: black;
   margin-bottom: 10px;
+  @media screen and (max-width: 1200px) {
+    font-size: 16px;
+  }
 `;
 
 const LinkBtn = styled.button`

@@ -3,6 +3,7 @@ import { useRef, useEffect } from "react";
 import IntroContainer from "../components/IntroContainer";
 import ProductContainer from "../components/ProductContainer";
 import BrandContainer from "../components/BrandContainer";
+import { useMediaQuery } from "react-responsive";
 
 const Outer = styled.div`
   height: 100vh;
@@ -43,7 +44,7 @@ function Main() {
           });
         }
       } else {
-        if (scrollTop >= 0 && scrollTop < pageHeight) {
+        if (Math.ceil(scrollTop) >= 0 && Math.ceil(scrollTop) <= pageHeight) {
           //현재 1페이지
           outerDivRef.current.scrollTo({
             top: 0,

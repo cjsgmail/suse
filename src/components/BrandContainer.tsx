@@ -19,6 +19,9 @@ const BrandBox = styled.div`
   justify-content: center;
   height: 100%;
   width: 80%;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 const MainContainer = styled.div`
@@ -26,6 +29,11 @@ const MainContainer = styled.div`
   height: 80%;
   width: 50%;
   margin-right: 10px;
+  @media screen and (max-width: 767px) {
+    height: 40%;
+    width: 80%;
+    margin-bottom: 20px;
+  }
 `;
 
 const MainIntro = styled.div`
@@ -42,6 +50,10 @@ const MainIntro = styled.div`
 const SmallSection = styled.div`
   height: 80%;
   width: 50%;
+  @media screen and (max-width: 767px) {
+    height: 40%;
+    width: 80%;
+  }
 `;
 
 const SmallContainer = styled.div`
@@ -86,10 +98,13 @@ const TextContainer = styled.div`
   justify-content: center;
   color: black;
   font-size: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 13px;
+  }
 `;
 
 const IntroText = styled.div`
-  width: 80%;
+  width: 100%;
 `;
 
 function BrandContainer() {
